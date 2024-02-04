@@ -1,0 +1,7 @@
+---
+- name: Converge
+  hosts: all
+  tasks:
+    - name: "Include clickouse"
+      include_role:
+        name: "clickouse"
