@@ -10,7 +10,7 @@ pipeline {
         }
         stage ('Run molecule') {
             steps {
-                sh 'molecule test || exit 0'
+                sh 'molecule test'
                 cleanWs()
             }
         }
